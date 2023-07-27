@@ -23,7 +23,7 @@ export const Navbar = () => {
         >
           Profile
           {activeItem === 'Profile' && (
-          <span className="cursoranimation">   <FontAwesomeIcon icon={faAngleRight} style={{ color: '#e2e5e9' }} /></span>
+          <span className="arrow-icon">   <FontAwesomeIcon icon={faAngleRight} style={{ color: '#e2e5e9' }} /></span>
         )}
          
         </li>
@@ -34,7 +34,7 @@ export const Navbar = () => {
         >
           Post
           {activeItem === 'Post' && (
-          <span className="cursoranimation">   <FontAwesomeIcon icon={faAngleRight} style={{ color: '#e2e5e9' }} /></span>
+          <span className="arrow-icon">   <FontAwesomeIcon icon={faAngleRight} style={{ color: '#e2e5e9' }} /></span>
         )}
         
         </li>
@@ -47,7 +47,7 @@ export const Navbar = () => {
         >
           Gallery
           {activeItem === 'Gallery' && (
-          <span className="cursoranimation">   <FontAwesomeIcon icon={faAngleRight} style={{ color: '#e2e5e9' }} /></span>
+          <span className="arrow-icon">   <FontAwesomeIcon icon={faAngleRight} style={{ color: '#e2e5e9' }} /></span>
         )}
         </li>
         <hr/>
@@ -57,7 +57,7 @@ export const Navbar = () => {
         >
           To-Do
           {activeItem === 'ToDo' && (
-          <span className="cursoranimation">   <FontAwesomeIcon icon={faAngleRight} style={{ color: '#e2e5e9' }} /></span>
+          <span className="arrow-icon">   <FontAwesomeIcon icon={faAngleRight} style={{ color: '#e2e5e9' }} /></span>
         )}
         </li>
       </ul>

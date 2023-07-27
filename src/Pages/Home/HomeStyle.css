@@ -39,7 +39,7 @@
   cursor: default;
 }
 
-.cursoranimation {
+.arrow-icon {
   position: absolute;
   padding: 1px 6px;
   width: 20px;
@@ -49,7 +49,7 @@
   right: 0;
 }
 
-.cursoranimation::before {
+.arrow-icon::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -61,7 +61,7 @@
   box-shadow: 4px 5px 0 0;
   color: #fff;
 }
-.cursoranimation::after {
+.arrow-icon::after {
   content: "";
   width: 10px;
   height: 10px;
