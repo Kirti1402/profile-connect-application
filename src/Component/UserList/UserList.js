@@ -13,6 +13,7 @@ export const UserList = () => {
   //method to handle on click event on user account and navigating to respective user account
   const onClickAccountHandle = (user) => {
     const userName = user.name.split(" ").join("");
+    localStorage.setItem("User", JSON.stringify(user));
     setUserProfile(user);
     navigate(`/profile`);
   };

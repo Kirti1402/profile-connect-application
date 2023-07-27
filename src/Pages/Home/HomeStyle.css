@@ -73,3 +73,24 @@
   box-shadow: 5px -4px 0 0;
   color: #fff;
 }
+
+/* Headercomponent */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.user-profile-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-profile-account p{
+    margin-left:10px;
+}
+.user-profile-account img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
