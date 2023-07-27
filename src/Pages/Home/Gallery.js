@@ -1,7 +1,10 @@
 import React from 'react'
+import { Navbar } from '../../Component/Navbar/Navbar'
 
 export const Gallery = () => {
   return (
-    <div>Comming Soon</div>
+    <div>
+         <Navbar/>
+        Comming Soon</div>
   )
 }

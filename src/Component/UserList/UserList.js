@@ -14,7 +14,7 @@ export const UserList = () => {
   const onClickAccountHandle = (user) => {
     const userName = user.name.split(" ").join("");
     setUserProfile(user);
-    navigate(`/home`);
+    navigate(`/profile`);
   };
 
   return (

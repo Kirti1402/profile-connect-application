@@ -1,0 +1,20 @@
+.container{
+    margin:40px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    height: 100vh;
+}
+.side-navbar{
+    background-color: blue;
+}
+.nav-list{
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-list-item.active {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    cursor: default;
+  }
