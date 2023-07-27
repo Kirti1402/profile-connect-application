@@ -20,7 +20,7 @@ export const UserList = () => {
   return (
     <ul className="user-list">
       {usersDetail &&
-        usersDetail.map((user) => {
+        usersDetail.map((user,index) => {
           const { id, name, profilepicture } = user;
           return (
             <li key={id}>
@@ -31,7 +31,7 @@ export const UserList = () => {
                 <img src={profilepicture} alt={name} />
                 <p>{name}</p>
               </div>
-              <hr></hr>
+              {(usersDetail.length-1) !== index ? <hr/> :""  }
             </li>
           );
         })}
