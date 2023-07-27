@@ -1,17 +1,17 @@
-import React from 'react'
-import  "./LandingStyle.css"
+import React from "react";
+import "./LandingStyle.css";
+import { UserList } from "../../Component/UserList.js/UserList";
 
-export const Landing =()=> {
+export const Landing = () => {
   return (
     <>
-    <div className='wave-1'>
-        
-    </div>
-    <section className=''>
-        <h1>Select an account</h1>
-
-    </section>
-
+      <div className="wave-1"></div>
+      <div className="centered-container">
+        <div className="account-selection">
+          <h2 className="account-selection-heading">Select an account</h2>
+          <UserList />
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
