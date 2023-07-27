@@ -3,11 +3,15 @@ import {UserProfileContext} from "../../Context/UserProfileContext"
 
 export const Header = () => {
     const {activeItem,userProfile,setUserProfile} = useContext(UserProfileContext);
+    console.log(userProfile);
     const currentPageName = activeItem.charAt(0).toUpperCase() + activeItem.slice(1)
     useEffect(() => {
-        const user = JSON.parse(localStorage.getItem("User"));
-        setUserProfile(user);
-    },[])
+      const storedUserProfile = localStorage.getItem('User');
+      console.log(storedUserProfile)
+      if (storedUserProfile) {
+        setUserProfile(JSON.parse(storedUserProfile));
+      }
+    }, []);
   return (
     <>
     <header className='header'>

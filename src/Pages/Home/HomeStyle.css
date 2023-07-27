@@ -94,3 +94,29 @@
     height: 30px;
     border-radius: 100%;
 }
+
+/* user profile detail */
+.profile-detail-container{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 0fr 3fr;
+}
+.profile-detail{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-detail img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+
+
+.user-detail span:nth-child(2){
+    margin: 5px;
+    
+}
