@@ -1,6 +1,6 @@
 import React from "react";
 import "./LandingStyle.css";
-import { UserList } from "../../Component/UserList.js/UserList";
+import { UserList } from "../../Component/UserList/UserList";
 
 export const Landing = () => {
   return (
