@@ -1,20 +1,75 @@
-.container{
-    margin:40px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    height: 100vh;
+.container {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100vh;
 }
-.side-navbar{
-    background-color: blue;
+.side-navbar {
+    background: rgb(49,62,169);
+    background: linear-gradient(198deg, rgba(49,62,169,1) 35%, rgba(108,49,197,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  border-radius: 20px;
 }
-.nav-list{
-    list-style: none;
-    cursor: pointer;
+.nav-list {
+  position: relative;
+  padding: 35px;
+  width: 100%;
+  list-style: none;
+}
+
+.nav-list > * {
+  margin: 10px 0;
+}
+.nav-list hr {
+  width: 100%;
+  color: #cbcbcd;
+}
+.nav-list-item {
+    color: #cbcbcd;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .nav-list-item.active {
-    background-color: #f0f0f0;
-    font-weight: bold;
-    cursor: default;
-  }
+  color: #fff;
+  cursor: default;
+}
+
+.cursoranimation {
+  position: absolute;
+  padding: 1px 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px 0 0 15px;
+  background-color: #fff;
+  right: 0;
+}
+
+.cursoranimation::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: transparent;
+  right: 0;
+  bottom: 100%;
+  border-bottom-right-radius: 5px;
+  box-shadow: 4px 5px 0 0;
+  color: #fff;
+}
+.cursoranimation::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: transparent;
+  top: 100%;
+  right: 0;
+  border-top-right-radius: 5px;
+  box-shadow: 5px -4px 0 0;
+  color: #fff;
+}
