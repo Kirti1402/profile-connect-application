@@ -1,7 +1,13 @@
 import React from 'react'
+import { Navbar } from '../../Component/Navbar/Navbar'
 
 export const ToDo = () => {
   return (
-    <div>Comming Soon</div>
+    <div className='container'>
+         <Navbar/>
+         <div>
+         Comming Soon
+         </div>
+        </div>
   )
 }

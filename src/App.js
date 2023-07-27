@@ -4,6 +4,7 @@ import { Landing } from './Pages/Landing/Landing';
 import { Profile } from './Pages/Home/Profile';
 import { Gallery } from './Pages/Home/Gallery';
 import { ToDo } from './Pages/Home/ToDo';
+import { Post } from './Pages/Home/Post';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Landing/>}/>
         <Route path="/profile" element={<Profile/>} />
+        <Route path="/post" element={<Post/>} />
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/todo" element={<ToDo/>} />
       </Routes>

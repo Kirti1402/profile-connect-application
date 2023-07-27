@@ -3,8 +3,11 @@ import { Navbar } from '../../Component/Navbar/Navbar'
 
 export const Gallery = () => {
   return (
-    <div>
+    <div className='container'>
          <Navbar/>
-        Comming Soon</div>
+         <div>
+         Comming Soon
+         </div>
+        </div>
   )
 }
