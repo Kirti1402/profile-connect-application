@@ -5,6 +5,7 @@ import { Profile } from './Pages/Home/Profile';
 import { Gallery } from './Pages/Home/Gallery';
 import { ToDo } from './Pages/Home/ToDo';
 import { Post } from './Pages/Home/Post';
+import "./Pages/Home/chatboxStyle.css"
 
 function App() {
   return (

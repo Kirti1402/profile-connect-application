@@ -5,6 +5,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import { UserContextProvider } from "./Context/UserContext";
 import { UserProfileContextProvider } from "./Context/UserProfileContext";
+import { ChatContextProvider } from "./Context/ChatContext";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,7 +14,9 @@ root.render(
     <Router>
       <UserContextProvider>
         <UserProfileContextProvider>
+          <ChatContextProvider>
         <App />
+        </ChatContextProvider>
         </UserProfileContextProvider>
       </UserContextProvider>
     </Router>
