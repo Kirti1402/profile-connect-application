@@ -8,13 +8,13 @@ export const Header = () => {
     const {activeItem,userProfile,setUserProfile} = useContext(UserProfileContext);
     console.log(userProfile);
     const currentPageName = activeItem.charAt(0).toUpperCase() + activeItem.slice(1)
-    useEffect(() => {
-      const storedUserProfile = localStorage.getItem('User');
-      console.log(storedUserProfile)
-      if (storedUserProfile) {
-        setUserProfile(JSON.parse(storedUserProfile));
-      }
-    }, []);
+    // useEffect(() => {
+    //   const storedUserProfile = localStorage.getItem('User');
+    //   console.log(storedUserProfile)
+    //   if (storedUserProfile) {
+    //     setUserProfile(JSON.parse(storedUserProfile));
+    //   }
+    // }, []);
     const onClickProfileHandle = ()=>{
       setProfileclicked(!profileClicked)
       

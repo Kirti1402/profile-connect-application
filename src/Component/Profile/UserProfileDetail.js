@@ -7,12 +7,12 @@ export const UserProfileDetail = () => {
 
   const storedUserProfile = localStorage.getItem("User");
   let locataion ;
-  useEffect(() => {
-    console.log(storedUserProfile);
-    if (storedUserProfile) {
-      setUserProfile(JSON.parse(storedUserProfile));
-    }
-  }, []);
+  // useEffect(() => {
+  //   console.log(storedUserProfile);
+  //   if (storedUserProfile) {
+  //     setUserProfile(JSON.parse(storedUserProfile));
+  //   }
+  // }, []);
   const {
     id,
     name,

@@ -2,12 +2,18 @@ import { useContext } from "react";
 import { UserProfileContext } from "../../Context/UserProfileContext";
 import { UserContext } from "../../Context/UserContext";
 import { useNavigate } from "react-router-dom";
+import { ChatContext } from "../../Context/ChatContext";
+
 
 
 export const ProfileAccount = () => {
     const navigate = useNavigate();
+    const {
+      setUserChatClicked,
+      setChatHeaderclicked
+    } = useContext(ChatContext);
   const { usersDetail } = useContext(UserContext);
-  const { userProfile, setUserProfile } = useContext(UserProfileContext);
+  const { userProfile, setUserProfile,setActiveItem } = useContext(UserProfileContext);
 
   const usersuggestion =
     usersDetail && usersDetail.filter(({ name }) => name !== userProfile.name);
@@ -17,8 +23,11 @@ const onClickHandleSignOut = ()=>{
 }
 
 const onClickHandleUserUpdate = (user) =>{
+  setActiveItem('profile')
     setUserProfile(user);
     navigate("/profile")
+    setUserChatClicked(false);
+    setChatHeaderclicked(false)
 
 }
   return (
